@@ -4,7 +4,7 @@ Date: Tue, 16 Jul 2024 17:18:27 +0100
 Subject: [PATCH] Raise max carb entry
 
 ---
- /LoopLoop/Models/LoopConstants.swift | 2 +-
+ Loop/Loop/Models/LoopConstants.swift | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Loop/Loop/Models/LoopConstants.swift b/Loop/Loop/Models/LoopConstants.swift
