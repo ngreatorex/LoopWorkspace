@@ -1,0 +1,22 @@
+From d99ab6ce7ea60d82b12a59ee83ccdfe2125cac7d Mon Sep 17 00:00:00 2001
+From: Neil Greatorex <neil@greatorex.me.uk>
+Date: Tue, 16 Jul 2024 11:47:37 +0100
+Subject: [PATCH] Widen sensitivity range
+
+---
+ LoopKit/LoopKit/Extensions/Guardrail+Settings.swift | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift b/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift
+index 1c8398fee..a95288eb5 100644
+--- a/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift
++++ b/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift
+@@ -79,7 +79,7 @@ public extension Guardrail where Value == HKQuantity {
+     }
+     
+     static let insulinSensitivity = Guardrail(
+-        absoluteBounds: (9.1)...(500.9),
++        absoluteBounds: (4.1)...(500.9),
+         recommendedBounds: (15.1)...(399.9),
+         unit: HKUnit.milligramsPerDeciliter.unitDivided(by: .internationalUnit()),
+         startingSuggestion: 50
