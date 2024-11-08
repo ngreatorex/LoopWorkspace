@@ -1,0 +1,22 @@
+From ae0b5c80a5300556ea5ff22fd074dacec33a211c Mon Sep 17 00:00:00 2001
+From: Neil Greatorex <neil@greatorex.me.uk>
+Date: Tue, 16 Jul 2024 17:18:27 +0100
+Subject: [PATCH] Raise max carb entry
+
+---
+ Loop/Loop/Models/LoopConstants.swift | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Loop/Loop/Models/LoopConstants.swift b/Loop/Loop/Models/LoopConstants.swift
+index fb69c8275f..a143093ee8 100644
+--- a/Loop/Loop/Models/LoopConstants.swift
++++ b/Loop/Loop/Models/LoopConstants.swift
+@@ -15,7 +15,7 @@ enum LoopConstants {
+     
+     // Input field bounds
+     
+-    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 250) // cannot exceed this value
++    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 1000) // cannot exceed this value
+ 
+     static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // user is warned above this value
+     
